@@ -1,5 +1,10 @@
 # Minio DEMO
 
+## Requirements
+**You'll need EKS, GKE or AKS cluster spanning multiple availability zones with Portworx installed**
+
+## Guide
+
 To replicate results please fallow these steps:
 
 1. Create cluster and follow Portworx installation tutorial found here - https://docs.portworx.com/portworx-install-with-kubernetes/cloud
