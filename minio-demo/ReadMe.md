@@ -2,7 +2,7 @@
 
 To replicate results please fallow these steps:
 
-1. Create cluster and follow Portworx instalation tutorial found here - https://docs.portworx.com/portworx-install-with-kubernetes/cloud
+1. Create cluster and follow Portworx installation tutorial found here - https://docs.portworx.com/portworx-install-with-kubernetes/cloud
 
 2. Create Namespaces and StorageClass by running `kubectl apply -f RunMeFirst.yaml`
 
@@ -10,7 +10,7 @@ To replicate results please fallow these steps:
 
 4. Deploy two Minio distributed Statefulsets by running commands below:
 
-- Add bitnami repo - `helm repo add bitnami https://charts.bitnami.com/bitnami`
+- Add Bitnami repo - `helm repo add bitnami https://charts.bitnami.com/bitnami`
 
 - Install Minio with default storage - `helm install -n minio-dist --set mode=distributed --set accessKey.password=minio --set secretKey.password=minio123 --set service.type=LoadBalancer minio-default-dist bitnami/minio`
 
